@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f8ff; /* Fondo suave */
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffcc00; /* Amarillo brillante */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #c71585; /* Color rosa intenso */
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Tarjeta de la película */
+.movie-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    width: 80%;
+    max-width: 800px;
+    padding: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.movie-card h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #ff1493; /* Rosa profundo */
+}
+
+.movie-card p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.movie-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+/* Galería de imágenes */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.image-gallery img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Botón de detalles */
+.details-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #ff69b4; /* Rosa brillante */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.details-button:hover {
+    background: #ff1493; /* Rosa más oscuro al pasar el ratón */
+    transform: scale(1.05);
+}

@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    background: linear-gradient(135deg, #333, #111);
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #2e2e2e;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff4500; /* Naranja intenso */
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Contenedor de la película */
+.movie-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Tarjeta de la película */
+.movie-card {
+    background: rgba(50, 50, 50, 0.9);
+    border-radius: 15px;
+    width: 80%;
+    max-width: 700px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.movie-card h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #ff4500;
+}
+
+.movie-card p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.movie-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+/* Galería de imágenes */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.image-gallery img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Botón de detalles */
+.details-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #ff4500; /* Naranja brillante */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.details-button:hover {
+    background: #e63900; /* Naranja más oscuro al pasar el ratón */
+    transform: scale(1.05);
+}

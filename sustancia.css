@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    background: linear-gradient(135deg, #1a1a1a, #efe1f2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Cambiado para permitir el desplazamiento */
+    min-height: 100vh;
+    text-align: center;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+/* Imagen de sangre en la parte superior */
+header {
+    width: 100%;
+    background: url('banner.jpg') no-repeat center top;
+    background-size: cover; /* Hace que la imagen cubra todo el ancho */
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro detrás de la imagen */
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8); /* Rojo para reflejar el tema de sangre */
+    margin: 0;
+}
+
+/* Contenedor de la película */
+.movie-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Tarjeta de la película */
+.movie-card {
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 15px;
+    width: 80%; /* Aumentar el ancho de la tarjeta */
+    max-width: 800px; /* Establecer un ancho máximo */
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.movie-card h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #ecf0f1; /* Color claro para el encabezado */
+}
+
+.movie-card p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.movie-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.image-gallery img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.details-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #c0392b, #e74c3c);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.details-button:hover {
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+    transform: scale(1.05);
+}
+
+/* Estilo de sangre en los bordes */
+body::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px; /* Altura del borde inferior */
+    background: url('blood-splash-bottom.png') no-repeat center; /* Imagen de sangre para el borde inferior */
+    background-size: cover;
+    z-index: -1;
+}
